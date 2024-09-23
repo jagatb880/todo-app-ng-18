@@ -1,0 +1,8 @@
+<h3>Child Component</h3>
+
+<!-- Display message from parent -->
+<p>Message from Parent: {{ childMessage }}</p>
+
+<!-- Child's input field -->
+<input type="text" [(ngModel)]="childInputMessage" placeholder="Enter message to parent">
+<button (click)="sendMessageToParent()">Send to Parent</button>

@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TodoService } from './todo.service';
 import { CommonModule, NgFor, NgIf } from '@angular/common';
+import { ParentComponent } from './parent/parent.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgFor, CommonModule, NgIf],
+  imports: [RouterOutlet, NgFor, CommonModule, NgIf, ParentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
